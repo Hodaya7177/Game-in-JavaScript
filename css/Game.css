@@ -1,0 +1,299 @@
+﻿body {
+    vertical-align: middle;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+#random-images {
+    color: #eddebb;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+/*.progress-bar {
+    width:1000px;
+    height:20px;
+}*/
+.inner-progress {
+    background-color: #c87f7f80;
+    height: 2vh;
+    width: 100vw;
+}
+
+.pic {
+    width: 150px;
+    height: 150px;
+    max-width: 15vw;
+    max-height: 15vw;
+    border: solid;
+    background-image: url('../images/31053812-seamless-background-with-various-fruits-vector-illustration-.jpg');
+    background-size: cover;
+}
+
+.arrow {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+    .arrow-succses {
+        color: green;
+    }
+
+    .arrow-error {
+        color: red;
+    }
+
+.empty-cell {
+    width: 50px;
+    height: 50px;
+}
+
+.kiwi {
+    background-image: url("../images/קיוי.jpg");
+}
+
+.banana {
+    background-image: url( "../images/banana.jpg");
+}
+
+.pineapple {
+    background-image: url( "../images/pineapple.jpg");
+}
+
+.strawberry {
+    background-image: url("../images/strawberry.jpg");
+}
+
+.avokado {
+    background-image: url('../images/אבוקדו (5).JPG');
+    background-size: cover;
+}
+
+.watermelon {
+    background-image: url('../images/אבטיח (2).JPG');
+    background-size: cover;
+}
+
+.pear {
+    background-image: url('../images/אגס.jpg');
+    background-size: cover;
+}
+
+.ananas {
+    background-image: url('../images/אננס (2).JPG ');
+    background-size: cover;
+}
+
+#click_1 {
+    background-image: url('../images/אבוקדו (5).JPG');
+    background-size: cover;
+    height: 10vh;
+    width: 5vw;
+}
+
+#click_2 {
+    background-image: url('../ images/אבטיח (2).JPG');
+    background-size: cover;
+    height: 10vh;
+    width: 5vw;
+}
+
+#click_3 {
+    background-image: url('../images/אגס.jpg');
+    background-size: cover;
+    height: 10vh;
+    width: 5vw;
+}
+
+#click_4 {
+    background-image: url('../images/אננס (2).JPG ');
+    background-size: cover;
+    height: 10vh;
+    width: 5vw;
+}
+
+table {
+    margin: auto;
+    margin-top: 4vh;
+}
+/*.fruit {
+    color: #c87f7f;
+    width: 1vw;
+    height: 2vh;
+    position: absolute;
+    animation-name: fruit;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    margin-top:45vh;
+
+}*/
+#time {
+    background-color: #402c2c94;
+    /* margin-top: 45vh; */
+    width: 100vw;
+    height: 2vh;
+    position: absolute;
+}
+/*@keyframes fruit {
+    0% {
+        right: 0vw;
+        width: 1vw;
+    }
+
+    89.9% {
+        background-color: #c87f7f;
+    }
+
+    90% {
+        background-color: red;
+    }
+
+    99% {
+        width: 99vw;
+        right: 0vw;
+        background-color: red;
+    }
+}*/
+.points {
+    color: #c87f7f;
+    text-align: center;
+    font-size: 10vh;
+    margin-left: 1vw;
+    font-family: 'Monotype Corsiva';
+}
+
+.backgroundfruit {
+    /*background-image: url('../images/31053812-seamless-background-with-various-fruits-vector-illustration-.jpg');*/
+    background-color: #c87f7f;
+    height: 22vh;
+    /*display:inline-block;*/
+    background-size: cover;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: rgba(145, 144, 143, 0.44);
+    margin: 8% auto;
+    padding: -1px;
+    border: 10px solid #d2cdcd;
+    width: 48%;
+    border-radius: 11vh;
+}
+
+/* The Close Button */
+.close {
+    /*color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;*/
+    display: none;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.center-arrows {
+    font-family: Webdings;
+    text-align: center;
+    font-size: 33px;
+    color: #c87f7f;
+}
+
+#backgraound {
+    background-image: url('../images/פרקט לבן חתוך.jpg');
+    padding-top: 10vh;
+}
+
+#game-over {
+    display: block;
+    color: #cebaba;
+    font-size: 12vh;
+    padding: -1vh;
+    text-align: center;
+    font-family: 'Monotype Corsiva';
+    margin-bottom: 2vh;
+    margin-top: 0vh;
+}
+
+.btn {
+    color: #fefbfb;
+    width: 16vh;
+    height: 3vw;
+    font-size: 3vh;
+    font-family: 'Monotype Corsiva';
+    display: inline-block;
+    margin: 1px;
+    background-color: rgba(145, 144, 143, 0.44);
+    border-radius: 10vh;
+    border-color: #c87f7f;
+    background-color: #dccbcb82;
+}
+
+    .btn:hover {
+        background-color: #c87f7f;
+        color: #fefbfb;
+        border-color: #fefbfb;
+    }
+
+.hidden {
+    display: none;
+}
+
+.btn-all {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+#startMessage, #failureMessage {
+    position: fixed;
+    left: -30vw;
+    top: 22.1vh;
+    animation-name: prof_enter;
+    animation-duration: 5s;
+}
+
+#failureMessage {
+    display: none;
+    animation-duration: 2s;
+}
+
+@keyframes prof_enter {
+    0% {
+        left: -30vw;
+        opacity: 0
+    }
+
+    50% {
+        left: 0;
+        opacity: 1
+    }
+
+    100% {
+        left: -30vw;
+        opacity: 0
+    }
+}

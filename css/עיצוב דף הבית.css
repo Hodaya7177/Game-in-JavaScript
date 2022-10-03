@@ -1,0 +1,99 @@
+﻿* {
+    overflow: hidden;
+    vertical-align: top;
+}
+
+body {
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-image: url("../images/דף הבית סווופיי.jpg");
+}
+
+#imgAll {
+    height: 100vw;
+    background-size: 99vw 99vh;
+    background-repeat: no-repeat;
+    background-image: url("../images/דף הבית סווופיי.jpg");
+}
+
+/*#level1 {
+    margin-top: 48vh;
+    margin-left: 37vw;
+}
+
+#level2 {
+    margin-top: 5vh;
+    position: absolute;
+    left: 74vh;
+    top: 61vh;
+}
+
+#level3 {    
+    position: absolute;
+    top: 83vh;
+    left: 74vh;
+}*/
+
+/*.btn {
+    font-family: 'Monotype Corsiva';
+    font-size: 2vw;
+    border-width: 3px;
+    width: 20vw;
+    height: 10vh;
+}*/
+
+#levels {
+    position: absolute;
+    bottom: 0;
+    /* left: calc(40vw - 15px); */
+    width: 100vw;
+    text-align:  right;
+}
+
+.btn {
+    height: 10vh;
+    width: 20vw;
+    font-family: Berlin Sans FB /*'Monotype Corsiva'*/;
+    font-size: 2.5vw;
+    border-width: 3px;
+    color: rgb(247, 243, 243);
+    border-color: rgba(231, 129, 133, 0.76);
+    border-radius: 5vh;
+    background-color: rgba(45, 73, 130, 0.76);
+    display: block;
+    margin: 20px auto;
+    outline:none;
+}
+    .btn:hover {
+        color:#ffffff ;
+        border-color: #2d4982;
+        background-color: rgba(231, 129, 133, 0.76);
+        
+    }
+    .btn.locked{
+        background-color:rgba(164, 150, 150, 0.63);
+    }
+/*.btn1{
+    color:#965050;
+    border-color:#965050;
+}
+.btn2{
+    color:#2d4982;
+    border-color: #2d4982;
+}
+.btn3{
+    color:#605151;
+    border-color:#605151 ;
+}*/
+
+#level1 #level2 #level3:hover {
+    border-color: #808080;
+}
+
+#about {
+    /* height: 5vh; */
+    width: 7vw;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    margin-right: 52px;
+}

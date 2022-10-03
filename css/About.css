@@ -1,0 +1,10 @@
+﻿body {
+    background-image: url("../images/אודות.JPG");
+    background-size: 100vw 100vh;
+}
+
+#home {
+    margin-left: 90vw;
+    margin-top: 88vh;
+    height: 11vh;
+}

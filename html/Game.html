@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../java script/JavaScript.js"></script>
+    <link href="../css/Game.css" rel="stylesheet" />
+</head>
+    <body onload="initModal(); main()">
+        <div id="backgraound">
+            <div></div>
+            <div class="points">Points: <span id="points">0</span> </div>
+            <div id="random-images"></div>
+            <table>
+                <tr>
+                    <td class="empty-cell"></td>
+                    <td class="arrow kiwi" onclick="ClickOnImage(0,'../images/קיוי.jpg')"></td>
+                    <td class="empty-cell"></td>
+                </tr>
+                <tr>
+                    <td class="arrow banana" onclick="ClickOnImage(1,'../images/banana.jpg')"></td>
+                    <td class="center-arrows">
+                        <span id="arrow-top"></span><br />
+                        <span id="arrow-left"></span><span id="arrow-right"></span><br />                       
+                        <span id="arrow-bottom"></span>
+                    </td>
+                    <td class="arrow pineapple" onclick="ClickOnImage(2,'../images/pineapple.jpg')"></td>
+                </tr>
+                <tr>
+                    <td class="empty-cell"></td>
+                    <td class="arrow strawberry" onclick="ClickOnImage(3,'../images/strawberry.jpg')"></td>
+                    <td class="empty-cell"></td>
+                </tr>
+            </table>
+
+            <div class="fruit">
+
+            </div>
+            <div class="borderFruit"></div>
+
+
+            <div id="time"></div>
+            <div class="progress-bar">
+                <div class="inner-progress" id="inner-progress"></div>
+            </div>
+        </div>
+        <div class="backgroundfruit"></div>
+                    
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="modal-level">level 2</p>
+                <p id="game-over">game over</p>
+                <div class="btn-all">
+                    <button class="btn" id="btn-again" onclick="nextLevel(false)">again</button>
+                    <button class="btn" id="btn-level" onclick="nextLevel(true)">next level</button>
+                    <button class="btn" id="btn-exit" onclick="exit()">exit</button>
+                </div>
+            </div>
+
+        </div>
+      <audio autoplay="autoplay"loop="loop">          
+                <!--<source src="../images/sound/DV035.WAV"  />-->           
+            <source src="../images/sound/DV042.WAV"  />
+      </audio>
+        <img id="startMessage" src="../images/הודעה למשחק.png" />
+        <img id="failureMessage" src="../images/כישלון.png" />
+    </body>
+</html>

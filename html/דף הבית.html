@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--<link href="../css/bootstrap.css" rel="stylesheet" />-->
+    <link href="../css/עיצוב דף הבית.css" rel="stylesheet" />
+</head>
+<body onload="lockLevels()">
+
+    <div>
+
+        <div id="levels">
+            <button id="level1" class="btn" onclick="openLevel(event, 1)">Junior</button><!--class="btn btn-outline-warning"-->
+            <button id="level2" class="btn" onclick="openLevel(event, 2)">Master</button> <!--class="btn btn-outline-success"-->
+            <button id="level3" class="btn" onclick="openLevel(event, 3)">Genius</button><!--class="btn btn-outline-danger"-->
+            <a href="About.html">
+                <img id="about" title="about" src="../images/about icon.png" />
+            </a>
+        </div>
+    </div>
+    <script>
+        function lockLevels() {
+            var x = localStorage.level || 1;
+            var buttons = document.getElementsByTagName("button");
+            for (var i = x; i < buttons.length; i++) {
+                buttons[i].classList.add("locked");
+            }
+        }
+        function openLevel(event, level) {
+            if (!event.target.classList.contains("locked")) {
+                sessionStorage.currentLevel = level;
+                open("Game.html", "_self");
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

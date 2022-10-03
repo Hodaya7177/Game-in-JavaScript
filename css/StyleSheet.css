@@ -1,0 +1,146 @@
+﻿body {
+}
+#random-images{
+  color:#eddebb;
+  width:35vw;
+  margin:auto;
+  margin-top:20vh;
+}
+.progress-bar {
+    width: 500px;
+    height:20px;
+   background-color:black;
+}
+.inner-progress {
+    background-color: red;
+    height:15px;
+}
+.pic {
+    width: 25%;
+}
+.arrow {
+    width:50px;
+    height:50px;
+    background-color:red;
+    border:2px solid black;
+}
+.empty-cell {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+.center-arrows{
+    background-color:yellow;
+}
+.kiwi {
+    background-image: url("../images/קיוי.jpg");
+    background-size: cover;
+}
+.banana {
+    background-image: url( "../images/banana.jpg");
+    background-size: cover;
+}
+.pineapple {
+    background-image: url( "../images/pineapple.jpg");
+    background-size: cover;
+}
+.strawberry {
+    background-image: url("../images/strawberry.jpg");
+    background-size: cover;
+}
+
+.avokado {
+    background-image: url('../images/אבוקדו (5).JPG');
+    background-size: cover;
+}
+
+.watermelon {
+    background-image: url('../images/אבטיח (2).JPG');
+    background-size: cover;
+}
+
+.pear {
+    background-image: url('../images/אגס.jpg');
+    background-size: cover;
+
+}
+
+.ananas {
+    background-image: url('../images/אננס (2).JPG ');
+    background-size: cover;
+}
+
+#click_1 {
+    background-image: url('../images/אבוקדו (5).JPG');
+    background-size: cover;
+    height: 10vh;
+    width: 5vw;
+}
+#click_2 {
+    background-image: url('../ images/אבטיח (2).JPG');
+    background-size: cover;
+    height: 10vh;
+    width: 5vw;
+}
+#click_3 {
+    background-image: url('../images/אגס.jpg');
+    background-size: cover;
+    height: 10vh;
+    width: 5vw;
+}
+#click_4 {
+    background-image: url('../images/אננס (2).JPG ');
+    background-size: cover;
+    height:10vh;
+    width: 5vw;
+}
+table {
+    margin: auto;
+    margin-bottom:10vh;
+
+}
+.fruit {
+    color: #c87f7f;
+    width: 1vw;
+    height: 2vh;
+    position: absolute;
+    animation-name: fruit;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    margin-top:45vh;
+
+}
+.borderFruit {
+    background-color: #ccc3c3;
+    margin-top: 45vh;
+    width: 100vw;
+    height: 2vh;
+    position: absolute;
+
+}
+@keyframes fruit {
+    0% {
+        right: 0vw;
+        width: 1vw;
+    }
+
+    89.9% {
+        background-color: #c87f7f;
+    }
+
+    90% {
+        background-color: red;
+    }
+
+    99% {
+        width: 99vw;
+        right: 0vw;
+        background-color: red;
+    }
+}
+.point{
+    color:#e4c9c9;
+    border:5px solid #c87f7f;
+    margin-right:10vh;
+    margin-top:10vw;
+}
